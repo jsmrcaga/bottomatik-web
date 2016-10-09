@@ -67,7 +67,6 @@ html, body {
 
 .intro {
 	height:100%;
-	display: flex;
 	align-items: center;
 }
 
@@ -76,7 +75,14 @@ html, body {
 	margin: 0 auto;
 	align-self: center;
 	transition: all 0.2s;
+}
+
+.branding_logo{
 	width: 50%;
+}
+
+.message_us {
+	width:  200px;
 }
 
 .h-green, .h-red, .h-blue, .h-orange, .h-purple {
