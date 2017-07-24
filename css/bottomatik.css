@@ -412,6 +412,7 @@ device.s5:before, .marvel-device.s5:after {
     -webkit-box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
     box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
     padding-top: 70px;
+    overflow: hidden;
 }
 
 .wrapper-use-cases > div {
