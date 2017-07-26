@@ -1,11 +1,7 @@
-@font-face {
-    font-family: "Catamaran";
-    src: local(Catamaran Regular), url("../fonts/catamaran/Catamaran-Regular.ttf") format("ttf");
-    font-weight: 400;
-}
-
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,700');
 body {
-    font-family: Catamaran;
+    font-family: 'Catamaran';
+    overflow-x: hidden;
 }
 
 nav {
