@@ -5,6 +5,7 @@ function init(){
 
 	$(document).ready(function(){
 		$('.scrollspy').scrollSpy();
+		$('ul.tabs').tabs({'swipeable': true, 'responsiveThreshold': true});
 		$('.parallax').parallax();
 		initPopulatePricing();
 		initTranslate();

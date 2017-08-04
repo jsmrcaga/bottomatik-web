@@ -1,0 +1,147 @@
+.wrapper-header {
+    background-image: linear-gradient(to right, #0031de, #007ffc);
+    background-image: -moz-linear-gradient(left, #0031de, #007ffc);
+}
+
+.wrapper-header span:nth-child(1) {
+    background-image: linear-gradient(to right, #1e50ff, #0f91ff);
+    background-image: -moz-linear-gradient(left, #1e50ff, #0f91ff);
+}
+
+.wrapper-header span:nth-child(2) {
+    background-image: linear-gradient(to right, #0031de, #0f91ff);
+    background-image: -moz-linear-gradient(left, #0031de, #0f91ff);
+}
+
+.wrapper-header .punchline .event {
+    background: #ab008e;
+}
+
+.wrapper-header .contact-us .btn:hover {
+    background: #ab008e;
+    border-color: #ab008e;
+}
+
+.wrapper-header .orga-tab-menu {
+    width: 100%;
+    top: 94.5%;
+    background: transparent;
+    display: flex;
+}
+
+.wrapper-header .orga-tab-menu .orga-tab-submenu {
+    flex: 1;
+    font-weight: 800;
+}
+
+.wrapper-header .orga-tab-menu .orga-tab-submenu a {
+    color: white;
+}
+
+.wrapper-header .orga-tab-menu .orga-tab-submenu a.active {
+    background: white;
+    transition: .5s;
+    color: #0f91ff;
+    border: none;
+}
+
+.wrapper-header .tabs .indicator {
+    display: none;
+}
+
+.wrapper-orga-experience {
+    position: relative;
+    margin: auto;
+}
+
+.wrapper-orga-experience .full-tab {
+    width: 100%!important;
+}
+
+.wrapper-orga-experience .main-title, .wrapper-orga-experience .title {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.wrapper-orga-experience .main-subtitle, .wrapper-orga-experience .subtitle {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.wrapper-orga-experience .subtitle-img {
+    height: 400px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.wrapper-orga-experience img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.wrapper-orga-experience .title {
+    margin-top: 30px;
+    color: #890073;
+}
+
+.wrapper-orga-experience .full-tab > .row {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.wrapper-orga-experience .full-tab > .row .col{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-orga-experience .full-tab > .row .description {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wrapper-orga-experience .full-tab > .row.description-right .description{
+    right: 0;
+}
+
+.wrapper-orga-experience .full-tab > .row.description-right .description-img {
+    margin-left: 0;
+    max-height: 500px;
+}
+
+.wrapper-orga-experience .full-tab > .row.description-left .description-img {
+    max-height: 500px;
+}
+
+.wrapper-orga-experience .full-tab > .row .description-img img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wrapper-orga-experience .full-tab > .row .description-img.img-portrait img{
+    height: 100%;
+    margin: auto;
+}
+
+footer:before {
+    background: #ab008e;
+}
+
+footer:after {
+    background: #890073;
+}
+
+footer.page-footer .footer-copyright {
+    background-color: #4e0042;
+}
+
+footer.page-footer .footer-copyright:before {
+    background: #4e0042;
+}
