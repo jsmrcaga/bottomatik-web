@@ -763,6 +763,10 @@ footer.page-footer .footer-copyright:before {
 }
 
 @media screen and (max-width: 992px) {
+    .brand-logo img {
+        padding-left: 0;
+    }
+
     .wrapper-header .punchline {
         top: 28%;
         font-size: 25px;
