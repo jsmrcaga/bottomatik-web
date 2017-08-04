@@ -145,3 +145,11 @@ footer.page-footer .footer-copyright {
 footer.page-footer .footer-copyright:before {
     background: #4e0042;
 }
+
+@media screen and (max-width: 600px) {
+    .wrapper-orga-experience .full-tab > .row .description {
+        position: relative;
+        top: 0;
+        transform: none;
+    }
+}
