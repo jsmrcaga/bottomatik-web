@@ -24,7 +24,7 @@
 
 .wrapper-header .orga-tab-menu {
     width: 100%;
-    top: 94.5%;
+    top: calc(100% - 48px);
     background: transparent;
     display: flex;
 }
@@ -36,6 +36,7 @@
 
 .wrapper-header .orga-tab-menu .orga-tab-submenu a {
     color: white;
+    font-size: 18px;
 }
 
 .wrapper-header .orga-tab-menu .orga-tab-submenu a.active {
@@ -146,10 +147,39 @@ footer.page-footer .footer-copyright:before {
     background: #4e0042;
 }
 
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+    .wrapper-header .contact-us {
+        top: 45%;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .wrapper-orga-experience .full-tab > .row .description {
         position: relative;
         top: 0;
         transform: none;
     }
+
+    .wrapper-header .orga-tab-menu .orga-tab-submenu a {
+        font-size: 14px;
+    }
+
+    .wrapper-orga-experience .subtitle-img {
+        height: 180px;
+    }
+
+    .wrapper-orga-experience .main-title, .wrapper-orga-experience .title {
+        font-size: 23px;
+    }
+
+    .wrapper-orga-experience .main-subtitle, .wrapper-orga-experience .subtitle {
+        font-size: 19px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
 }

@@ -5,13 +5,12 @@ function init(){
 
 	$(document).ready(function(){
 		$('.scrollspy').scrollSpy();
+        $(".button-collapse").sideNav();
 		$('ul.tabs').tabs({'swipeable': true, 'responsiveThreshold': true});
 		$('.parallax').parallax();
 		initPopulatePricing();
 		initTranslate();
 	});
-
-	$(".button-collapse").sideNav();
 
 	pricingResultWrapper = document.getElementById('pricingResultWrapper').innerHTML;
 };
