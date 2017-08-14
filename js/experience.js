@@ -47,8 +47,8 @@ Array.prototype.contains = function(element){
 
 let initTranslate = function() {
 	if (langs.contains(langCode)) {
-		$.getJSON('lang/' + langCode + '.json', translate);
+		$.getJSON('../lang/' + langCode + '.json', translate);
 	} else {
-		$.getJSON('lang/en.json', translate);
+		$.getJSON('../lang/en.json', translate);
 	}
 };
