@@ -27,16 +27,19 @@
     top: calc(100% - 48px);
     background: transparent;
     display: flex;
+    height: 60px;
 }
 
 .wrapper-header .orga-tab-menu .orga-tab-submenu {
     flex: 1;
     font-weight: 800;
+    height: 60px;
+    line-height: 60px;
 }
 
 .wrapper-header .orga-tab-menu .orga-tab-submenu a {
     color: white;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .wrapper-header .orga-tab-menu .orga-tab-submenu a.active {
@@ -107,6 +110,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    font-size: 18px;
 }
 
 .wrapper-orga-experience .full-tab > .row.description-right .description{

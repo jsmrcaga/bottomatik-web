@@ -34,13 +34,13 @@ function pricingCalcul () {
 	document.getElementById('pricingResultWrapper').innerHTML = pricingResultWrapper;
 	if (parseInt(document.getElementById('selectEventType').value) === 2000) {
 		if(parseInt(document.getElementById('selectComplexity').value) === 1000) {
-			price = parseInt(document.getElementById('selectEventType').value) * parseFloat(document.getElementById('selectAudienceSize').value) / 2;
+			price = parseInt(document.getElementById('selectEventType').value) / 2;
 			document.getElementById('pricingResult').textContent = `${price}€`;
 			$('#quote').css('display', 'block');
 			$('#no-quote').css('display', 'none');
 			$('#pricingMonth').css('display', 'initial');
 		} else if (parseInt(document.getElementById('selectComplexity').value) === 0) {
-			price = parseInt(document.getElementById('selectEventType').value) * parseFloat(document.getElementById('selectAudienceSize').value) / 2;
+			price = parseInt(document.getElementById('selectEventType').value) / 2;
 			document.getElementById('pricingResult').textContent = `${price}€`;
 			$('#pricingMonth').css('display', 'initial');
 			$('#quote').css('display', 'block');
@@ -49,6 +49,9 @@ function pricingCalcul () {
 			$('#quote').css('display', 'none');
 			$('#no-quote').css('display', 'block');
 		}
+	} else if (parseInt(document.getElementById('selectEventType').value) === 0) {
+		$('#quote').css('display', 'none');
+		$('#no-quote').css('display', 'block');
 	} else {
 		price = parseInt(document.getElementById('selectEventType').value) * parseFloat(document.getElementById('selectAudienceSize').value) + parseInt(document.getElementById('selectComplexity').value);
 		if(document.getElementById('selectComplexity').value !== '?') {
