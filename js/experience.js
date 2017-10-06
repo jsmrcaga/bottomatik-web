@@ -14,7 +14,7 @@ window.onresize = function() {
 };
 
 window.onscroll = function() {
-	if(document.body.scrollTop > (($(window).height()- 100) / 2)) {
+	if($(window).scrollTop() > (($(window).height()- 100) / 2)) {
 		$('nav').css("background", "#0f91ff");
 	} else {
 		$('nav').css("background", "transparent");

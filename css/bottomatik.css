@@ -37,6 +37,21 @@ nav {
 .navbar-menu li a {
     font-weight: 800;
     font-size: 22px;
+    margin: 0;
+}
+
+.navbar-menu li a lang{
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.navbar-menu li a:hover {
+    background: transparent;
+}
+
+.navbar-menu li a lang:hover {
+    background: #26a9ff;
 }
 
 .wrapper-header {
