@@ -181,6 +181,11 @@ nav {
     transform: translate(-50%, -50%);
 }
 
+.wrapper-partners a:hover .card-panel{
+    box-shadow: 3px 3px 10px #000000;
+    transition: 0.2s;
+}
+
 .wrapper-examples {
     position: relative;
 }
