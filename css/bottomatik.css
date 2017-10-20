@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Catamaran';
+    font-family: 'Catamaran', 'Verdana', sans-serif;
     overflow-x: hidden;
 }
 
@@ -755,6 +755,14 @@ footer:before, footer:after {
     width: 30px;
 }
 
+.footer-social-media ul li {
+    position: relative;
+}
+
+.footer-social-media ul li a {
+    padding-right: 10px;
+}
+
 footer .footer-separator {
     height: 50px;
 }
@@ -779,6 +787,12 @@ footer.page-footer .footer-copyright:before {
     z-index: -900;
     top: -40px;
     left: 0;
+}
+
+.fb-iframe, #twitter-widget-0{
+    height: 24px!important;
+    position: absolute!important;
+    bottom: 0;
 }
 
 @media screen and (max-width: 1200px) {
