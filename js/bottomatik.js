@@ -1,11 +1,13 @@
 let pricingResultWrapper = null;
 
-function init(){
-	$(".wrapper-header").css("height", ($(window).height()- 100));
+init = function () {
+	$(".wrapper-header").css("height", ($(window).height() - 100));
 
-	$(document).ready(function(){
+	$(document).ready(function () {
 		$('.scrollspy').scrollSpy();
-        $(".button-collapse").sideNav();
+		$(".button-collapse").sideNav();
+		$(".dropdown-button").dropdown();
+		$('.tooltipped').tooltip({delay: 50});
 		$('ul.tabs').tabs({'swipeable': true, 'responsiveThreshold': true});
 		$('.parallax').parallax();
 		initPopulatePricing();
@@ -15,12 +17,12 @@ function init(){
 	pricingResultWrapper = document.getElementById('pricingResultWrapper').innerHTML;
 };
 
-window.onresize = function() {
-	$(".wrapper-header").css("height", ($(window).height()- 100));
+window.onresize = function () {
+	$(".wrapper-header").css("height", ($(window).height() - 100));
 };
 
-window.onscroll = function() {
-	if($(window).scrollTop() > (($(window).height()- 100) / 2)) {
+window.onscroll = function () {
+	if ($(window).scrollTop() > (($(window).height() - 100) / 2)) {
 		$('nav').css("background", "#890073");
 	} else {
 		$('nav').css("background", "transparent");
@@ -29,11 +31,11 @@ window.onscroll = function() {
 
 init();
 
-function pricingCalcul () {
+function pricingCalcul() {
 	let price = 0;
 	document.getElementById('pricingResultWrapper').innerHTML = pricingResultWrapper;
 	if (parseInt(document.getElementById('selectEventType').value) === 2000) {
-		if(parseInt(document.getElementById('selectComplexity').value) === 1000) {
+		if (parseInt(document.getElementById('selectComplexity').value) === 1000) {
 			price = parseInt(document.getElementById('selectEventType').value) / 2;
 			document.getElementById('pricingResult').textContent = `${price}€`;
 			$('#quote').css('display', 'block');
@@ -54,7 +56,7 @@ function pricingCalcul () {
 		$('#no-quote').css('display', 'block');
 	} else {
 		price = parseInt(document.getElementById('selectEventType').value) * parseFloat(document.getElementById('selectAudienceSize').value) + parseInt(document.getElementById('selectComplexity').value);
-		if(document.getElementById('selectComplexity').value !== '?') {
+		if (document.getElementById('selectComplexity').value !== '?') {
 			document.getElementById('pricingResult').textContent = `${price}€`;
 			$('#quote').css('display', 'block');
 			$('#no-quote').css('display', 'none');
@@ -74,22 +76,20 @@ function pricingCalcul () {
 let langs = ['en', 'fr'];
 let langCode = '';
 
-langCode = navigator.language.substr (0, 2);
+langCode = navigator.language.substr(0, 2);
 
-let translate = function (jsdata)
-{
-	$("[tkey]").each (function (index)
-	{
-		let strTr = jsdata [$(this).attr ('tkey')];
-		$(this).html (strTr);
+let translate = function (jsdata) {
+	$("[tkey]").each(function (index) {
+		let strTr = jsdata [$(this).attr('tkey')];
+		$(this).html(strTr);
 	});
 };
 
-Array.prototype.contains = function(element){
+Array.prototype.contains = function (element) {
 	return this.indexOf(element) > -1;
 };
 
-let initTranslate = function() {
+let initTranslate = function () {
 	if (langs.contains(langCode)) {
 		$.getJSON('lang/' + langCode + '.json', translate);
 	} else {
@@ -101,7 +101,7 @@ let initTranslate = function() {
 /*********************  POPULATE PRICING  **********************/
 /***************************************************************/
 
-let initPopulatePricing = function(element) {
+let initPopulatePricing = function () {
 	if (langs.contains(langCode)) {
 		$.getJSON('lang/' + langCode + '.json', populatePricing);
 	} else {
@@ -109,7 +109,8 @@ let initPopulatePricing = function(element) {
 	}
 };
 
-let populatePricing = function(jsData) {
+let populatePricing = function (jsData) {
+	console.log('POULET');
 
 	let pricingEventTypeOptions = $('#selectEventType').find("option").toArray();
 

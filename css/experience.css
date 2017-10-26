@@ -1,3 +1,7 @@
+.navbar-menu > li > a lang:hover {
+    background: #ab008e;
+}
+
 .wrapper-header {
     background-image: linear-gradient(to right, #0031de, #007ffc);
     background-image: -moz-linear-gradient(left, #0031de, #007ffc);

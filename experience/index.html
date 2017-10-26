@@ -68,19 +68,88 @@
 <body id="page-top">
 
 <div class="navbar-fixed">
+    <ul id="dropdown-solutions" class="dropdown-content dropdown-solutions">
+        <li>
+            <a href="../solutions/convention.html">
+                <div class="row">
+                    <div class="col s3">
+                        <div class="icon-logo circle">
+                            <i class="material-icons">device_hub</i>
+                        </div>
+                    </div>
+                    <div class="col s9">
+                        <div class="title">
+                            <lang tkey="menu-solutions-salon-title">Salons</lang>
+                        </div>
+                        <div class="subtitle">
+                            <lang tkey="menu-solutions-salon-subtitle">Digitalisez votre événement et offrez une expérience unique pour vos visiteurs</lang>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <!--
+		<li>
+			<a href="solutions/museum.html">
+				<div class="row">
+					<div class="col s3">
+						<div class="icon-logo circle">
+							<i class="material-icons">color_lens</i>
+						</div>
+					</div>
+					<div class="col s9">
+						<div class="title">
+							<lang tkey="menu-solutions-museum-title">Musées</lang>
+						</div>
+						<div class="subtitle">
+							<lang tkey="menu-solutions-museum-subtitle">Salons</lang>
+						</div>
+					</div>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="solutions/sport.html">
+				<div class="row">
+					<div class="col s3">
+						<div class="icon-logo circle">
+							<i class="material-icons">directions_run</i>
+						</div>
+					</div>
+					<div class="col s9">
+						<div class="title">
+							<lang tkey="menu-solutions-sport-title">Sports</lang>
+						</div>
+						<div class="subtitle">
+							<lang tkey="menu-solutions-sport-subtitle">Salons</lang>
+						</div>
+					</div>
+				</div>
+			</a>
+		</li>
+		-->
+    </ul>
     <nav>
         <div class="nav-wrapper">
-            <a class="brand-logo" href="../"><img src="../img/logo_white.png" class="branding_top"></a>
+            <a class="brand-logo" href="../index.html"><img src="../img/logo_white.png" class="branding_top"></a>
 
-            <!-- <ul class="right hide-on-med-and-down navbar-menu">
+            <ul class="right hide-on-med-and-down navbar-menu">
                 <li>
-                    <a href="#"><lang tkey="menu-experience"></lang></a>
+                    <a class="dropdown-button" href="#!" data-activates="dropdown-solutions" data-beloworigin="true" data-hover="true" data-constrainWidth="false">
+                        <lang tkey="menu-solutions">Solutions</lang>
+                    </a>
                 </li>
-            </ul> -->
+                <li>
+                    <a href="../experience/"><lang tkey="menu-experience">Expérience organisateur</lang></a>
+                </li>
+            </ul>
 
             <ul id="nav-mobile" class="side-nav">
                 <li>
-                    <a href="../"><lang tkey="menu-home">Acceuil</lang></a>
+                    <a href="../index.html"><lang tkey="menu-home">Acceuil</lang></a>
+                </li>
+                <li>
+                    <a href="../experience/"><lang tkey="menu-experience">Expérience organisateur</lang></a>
                 </li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -251,8 +320,8 @@
                         <a class="grey-text text-lighten-3" href="https://twitter.com/bottomatik" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a>
                         <a href="https://twitter.com/bottomatik?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false">Follow @bottomatik</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </li>
-                    <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/bottomatik/" target="_blank">Instagram</a></li>
-                    <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/company-beta/10992067/" target="_blank">LinkedIn</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/bottomatik/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/company-beta/10992067/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
                 </ul>
             </div>
             <div class="col s12 footer-social-media hide-on-med-and-up">
@@ -277,6 +346,14 @@
     </div>
 </footer>
 
+<div class="fixed-action-btn click-to-toggle wrapper-space-invader">
+    <a id="space-invader" class="btn-floating btn-large pulse">
+        <img src="../img/space_invader.svg" alt="Space Invader" />
+    </a>
+    <ul class="wrapper-bot">
+        <iframe src="https://d363qlcydfevm6.cloudfront.net/"></iframe>
+    </ul>
+</div>
 
 <!--Import Google Icon Font-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
