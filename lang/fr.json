@@ -7,7 +7,7 @@
 	"menu-solutions-museum-title": "Musées",
 	"menu-solutions-museum-subtitle": "Musées",
 	"menu-solutions-sport-title": "Sports",
-	"menu-solutions-sport-subtitle": "Sports",
+	"menu-solutions-sport-subtitle": "Changez votre relation avec vos participants et leurs supporters",
 	"contact-us": "Contactez nous",
 	"punchline-2": "Laissez nos chatbots répondre à toutes les questions.",
 	"use-cases-title": "Des chatbots pour assister vos événements",
@@ -112,5 +112,16 @@
 	"solution-convention-desc-4-1": "Bon de commande",
 	"solution-convention-desc-4-2": "Récupération des données",
 	"solution-convention-desc-4-3": "Première Version",
-	"solution-convention-desc-4-4": "Version finale - déploiement"
+	"solution-convention-desc-4-4": "Version finale - déploiement",
+	"solution-sport-punchline-1-1": "Solution",
+	"solution-sport-punchline-1-2": "sport",
+	"solution-sport-punchline-2": "Changez votre relation avec vos participants et leurs supporters",
+	"solution-sport-organizer": "Organisateur",
+	"solution-sport-runner": "Participant",
+	"solution-sport-runner-subtitle-3": "Liez le chatbot aux principales applications que vos participants utilisent",
+	"solution-sport-subtitle-1": "Courses, Infos pratiques ...",
+	"solution-sport-desc-1": "Votre chatbot contient toutes les informations indispensables aux participants ainsi qu'aux supporters. Intégrez le programme de votre événements : ses différentes courses, animations ... et laissez aux participants la possibilité de sauvegarder leur agenda dans votre chatbot.<br/>En plus, permettez à vos particpants et supporters d'avoir accès à votre FAQ directement depuis le chatbot ainsi qu'aux informations pratiques afin de venir sur le lieu ou bien contacter votre équipe.",
+	"solution-sport-subtitle-2": "Billetterie, live tracking",
+	"solution-sport-desc-2": "Votre chatbot vous ressemble, alors mettez y tout votre événement !<br/>En plus des données, Bottomatik vous permet d'intégrez vos services dans le chatbot afin d'en faire un assistant virtuel complet. Plus besoin d'applications, votre chatbot peut tout faire.<br/>Bottomatik peut intégrer votre billetterie, votre application de live tracking et autres à l'intérieur même du chatbot.",
+	"solution-sport-desc-3": "Soyez en avance sur votre temps, mettez votre événement en avant grâce à un service innovant.<br/>Les chatbots vous permettent de communiquer directement avec vos participants et de leur offrir une meilleure expérience. Un changement de programme ? Prévenez tout les participants et supporters qui ont marqués ce programme dans leur agenda.<br/>Durant et après votre événement: accès aux analytics du chatbot et ce que les visiteurs ont le plus demandés. Soyez au courant des points forts et faibles de votre événement sportif et demandez des feedbacks rapides aux participants."
 }
