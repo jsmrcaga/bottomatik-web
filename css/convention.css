@@ -150,7 +150,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 18px;
+    font-size: 1.5em;
 }
 
 .wrapper-convention .row.description-right .description, .detail-section > .row.description-right .description{
