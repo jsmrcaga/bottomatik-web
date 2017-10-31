@@ -206,10 +206,6 @@ nav {
     background: transparent;
 }
 
-.wrapper-features-title {
-    position: absolute;
-}
-
 .marvel-device .screen img {
     width: 100%;
     height: 100%;
@@ -219,6 +215,7 @@ nav {
 .wrapper-pricing .title .features-logo,
 .wrapper-partners .title .features-logo,
 .wrapper-use-cases .title .features-logo,
+.wrapper-use-cases-event .title .features-logo,
 .wrapper-blog .title .features-logo {
     width: 80px;
     height: 80px;
@@ -234,7 +231,7 @@ nav {
     font-size: 1em;
 }
 
-.wrapper-partners .title .features-logo, .wrapper-use-cases .title .features-logo, .wrapper-blog .title .features-logo {
+.wrapper-partners .title .features-logo, .wrapper-use-cases .title .features-logo, .wrapper-use-cases-event .title .features-logo, .wrapper-blog .title .features-logo {
     background: #0f91ff;
 }
 
@@ -242,6 +239,7 @@ nav {
 .wrapper-pricing .title .features-logo i,
 .wrapper-partners .title .features-logo i,
 .wrapper-use-cases .title .features-logo i,
+.wrapper-use-cases-event .title .features-logo i,
 .wrapper-blog .title .features-logo i{
     color: white;
     font-size: 40px;
@@ -492,7 +490,7 @@ device.s5:before, .marvel-device.s5:after {
     z-index: 2;
 }
 
-.wrapper-use-cases {
+.wrapper-use-cases, .wrapper-use-cases-event {
     z-index: 2;
     width: 100%;
     height: 100%;
@@ -510,18 +508,27 @@ device.s5:before, .marvel-device.s5:after {
 .why-bot {
     background-color:  #FFFFFF;
     z-index: 4;
-    overflow-x: hidden;
+    overflow: visible;
 }
 
-.wrapper-use-cases > div {
+.wrapper-use-cases > div, .wrapper-use-cases-event > div {
     transform: skewY(8deg);
 }
 
-.wrapper-use-cases > span {
+.wrapper-use-cases > span, .wrapper-use-cases-event > span {
     position: absolute;
 }
 
 .wrapper-use-cases span:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    left: -50%;
+    top: 0;
+    transform: skewX(-38deg);
+    background: #f1f1f1;
+}
+
+.wrapper-use-cases-event span:nth-child(1) {
     width: 100%;
     height: 100%;
     right: -70%;
@@ -530,14 +537,14 @@ device.s5:before, .marvel-device.s5:after {
     background: #f1f1f1;
 }
 
-.wrapper-use-cases .title, .wrapper-partners .title, .wrapper-pricing .title, .wrapper-features .title, .wrapper-blog .title {
+.wrapper-use-cases .title, .wrapper-use-cases-event .title, .wrapper-partners .title, .wrapper-pricing .title, .wrapper-features .title, .wrapper-blog .title {
     font-weight: 600;
     text-align: center;
     font-size: 30px;
     margin-bottom: 20px;
 }
 
-.wrapper-use-cases .card-icon {
+.wrapper-use-cases .card-icon, .wrapper-use-cases-event .card-icon {
     width: 100px;
     height: 100px;
     margin: auto;
@@ -547,7 +554,7 @@ device.s5:before, .marvel-device.s5:after {
     margin-bottom: 30px;
 }
 
-.wrapper-use-cases .card-icon img {
+.wrapper-use-cases .card-icon img, .wrapper-use-cases-event .card-icon img {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -557,22 +564,22 @@ device.s5:before, .marvel-device.s5:after {
     background-color: #FFFFFF;
 }
 
-.wrapper-use-cases .card-title {
+.wrapper-use-cases .card-title, .wrapper-use-cases-event .card-title {
     text-align: center;
     font-weight: 800;
     font-size: 20px;
 }
 
-.wrapper-use-cases .card-content {
+.wrapper-use-cases .card-content, .wrapper-use-cases-event .card-content {
     text-align: center;
 }
 
-.wrapper-use-cases .products {
+.wrapper-use-cases .products, .wrapper-use-cases-event .products {
     margin-top: 20px;
     text-align: center;
 }
 
-.wrapper-use-cases .products .btn {
+.wrapper-use-cases-event .products .btn {
     background: transparent;
     border-style: solid;
     border-width: 2px;
@@ -581,7 +588,7 @@ device.s5:before, .marvel-device.s5:after {
     color: #890073;
 }
 
-.wrapper-use-cases .products .btn:hover {
+.wrapper-use-cases-event .products .btn:hover {
     background: #890073;
     color: white;
     border-color: #890073;
@@ -975,6 +982,14 @@ footer.page-footer .footer-copyright:before {
 @media screen and (max-width: 1200px) {
     .hide-on-large-and-down {
         display: none;
+    }
+
+    .why-bot {
+        overflow: hidden;
+    }
+
+    .wrapper-partners {
+        overflow: hidden;
     }
 }
 
