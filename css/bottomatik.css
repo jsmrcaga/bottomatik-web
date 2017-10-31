@@ -206,6 +206,10 @@ nav {
     background: transparent;
 }
 
+.wrapper-features-title {
+    position: absolute;
+}
+
 .marvel-device .screen img {
     width: 100%;
     height: 100%;
@@ -223,6 +227,11 @@ nav {
     position: relative;
     margin-bottom: 10px;
     opacity: 0.5;
+}
+
+.wrapper-features .subtitle {
+    font-weight: normal;
+    font-size: 1em;
 }
 
 .wrapper-partners .title .features-logo, .wrapper-use-cases .title .features-logo, .wrapper-blog .title .features-logo {
@@ -498,6 +507,12 @@ device.s5:before, .marvel-device.s5:after {
     overflow: hidden;
 }
 
+.why-bot {
+    background-color:  #FFFFFF;
+    z-index: 4;
+    overflow-x: hidden;
+}
+
 .wrapper-use-cases > div {
     transform: skewY(8deg);
 }
@@ -536,6 +551,10 @@ device.s5:before, .marvel-device.s5:after {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.card-icon.white {
+    background-color: #FFFFFF;
 }
 
 .wrapper-use-cases .card-title {
@@ -590,12 +609,6 @@ device.s5:before, .marvel-device.s5:after {
 .wrapper-features > .row .col{
     display: flex;
     flex-direction: column;
-}
-
-.wrapper-features .title {
-    position: absolute;
-    top: 30%;
-    transform: translateY(-50%);
 }
 
 .wrapper-features .features-logo-wrapper .features-logo {
