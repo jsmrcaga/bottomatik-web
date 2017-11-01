@@ -69,6 +69,10 @@ function pricingCalcul() {
 	initTranslate();
 }
 
+let initIframeBot = function ($event) {
+	document.getElementById('IframeBot').setAttribute('src', 'https://d363qlcydfevm6.cloudfront.net/');
+};
+
 /***************************************************************/
 /***********************     LANG     **************************/
 /***************************************************************/
@@ -110,7 +114,6 @@ let initPopulatePricing = function () {
 };
 
 let populatePricing = function (jsData) {
-	console.log('POULET');
 
 	let pricingEventTypeOptions = $('#selectEventType').find("option").toArray();
 
@@ -132,3 +135,31 @@ let populatePricing = function (jsData) {
 
 	$('select').material_select();
 };
+
+/***************************************************************/
+/************************  SCROLL FIRE  ************************/
+/***************************************************************/
+
+let options = [
+	{selector: '.wrapper-stats', offset: 200, callback: function() {
+		$('.count').each(function () {
+			$(this).prop('Counter',0).animate({
+				Counter: $(this).text()
+			}, {
+				duration: 4000,
+				easing: 'easeOutQuart',
+				step: function (now) {
+					$(this).text(commaSeparateNumber(Math.ceil(now)));
+				}
+			});
+		});
+	} },
+];
+Materialize.scrollFire(options);
+
+function commaSeparateNumber(val){
+	while (/(\d+)(\d{3})/.test(val.toString())){
+		val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+	}
+	return val;
+}
