@@ -147,11 +147,32 @@ nav {
     text-align: center;
     width: 100%;
     color: white;
-    top: 38%;
-    font-size: 30px;
+    top: 33%;
+    font-size: 35px;
     font-weight: 700;
     text-transform: uppercase;
     background: transparent;
+}
+
+.wrapper-header .pre-punchline {
+    transform: skewY(12deg);
+    text-align: center;
+    width: 100%;
+    color: white;
+    top: 38%;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+.wrapper-header .pre-punchline span {
+    background:  none;
+    font-size: 1.2em;
+}
+
+.typed-cursor {
+    display: none;
 }
 
 .wrapper-header .punchline .first-letter, .wrapper-header .punchline .last-letter {
@@ -1011,6 +1032,10 @@ footer.page-footer .footer-copyright:before {
     box-shadow: 3px 3px 10px #888888;
 }
 
+typed {
+    display: none;
+}
+
 @media screen and (max-width: 1200px) {
     .hide-on-large-and-down {
         display: none;
@@ -1039,8 +1064,13 @@ footer.page-footer .footer-copyright:before {
     }
 
     .wrapper-header .punchline {
-        top: 28%;
+        top: 25%;
         font-size: 25px;
+    }
+
+    .wrapper-header .pre-punchline {
+        top: 28%;
+        font-size: 20px;
     }
 
     .wrapper-header .punchline .first-letter, .wrapper-header .punchline .last-letter {
@@ -1074,6 +1104,11 @@ footer.page-footer .footer-copyright:before {
     .wrapper-header .punchline {
         top: 25%;
         font-size: 15px;
+    }
+
+    .wrapper-header .pre-punchline {
+        top: 30%;
+        font-size: 13px;
     }
 
     .wrapper-header .punchline .first-letter, .wrapper-header .punchline .last-letter {

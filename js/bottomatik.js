@@ -1,4 +1,4 @@
-let pricingResultWrapper = null;
+var pricingResultWrapper = null;
 
 init = function () {
 	$(".wrapper-header").css("height", ($(window).height() - 100));
@@ -32,7 +32,7 @@ window.onscroll = function () {
 init();
 
 function pricingCalcul() {
-	let price = 0;
+	var price = 0;
 	document.getElementById('pricingResultWrapper').innerHTML = pricingResultWrapper;
 	if (parseInt(document.getElementById('selectEventType').value) === 2000) {
 		if (parseInt(document.getElementById('selectComplexity').value) === 1000) {
@@ -69,7 +69,7 @@ function pricingCalcul() {
 	initTranslate();
 }
 
-let initIframeBot = function ($event) {
+var initIframeBot = function ($event) {
 	document.getElementById('IframeBot').setAttribute('src', 'https://d363qlcydfevm6.cloudfront.net/');
 };
 
@@ -77,23 +77,24 @@ let initIframeBot = function ($event) {
 /***********************     LANG     **************************/
 /***************************************************************/
 
-let langs = ['en', 'fr'];
-let langCode = '';
+var langs = ['en', 'fr'];
+var langCode = '';
 
 langCode = navigator.language.substr(0, 2);
 
-let translate = function (jsdata) {
+var translate = function (jsdata) {
 	$("[tkey]").each(function (index) {
-		let strTr = jsdata [$(this).attr('tkey')];
+		var strTr = jsdata [$(this).attr('tkey')];
 		$(this).html(strTr);
 	});
+	typed();
 };
 
 Array.prototype.contains = function (element) {
 	return this.indexOf(element) > -1;
 };
 
-let initTranslate = function () {
+var initTranslate = function () {
 	if (langs.contains(langCode)) {
 		$.getJSON('lang/' + langCode + '.json', translate);
 	} else {
@@ -101,11 +102,37 @@ let initTranslate = function () {
 	}
 };
 
+var typed_read = function(element){
+	var langs = element.querySelectorAll('lang');
+	var ret = [];
+	for(var i = 0; i < langs.length; i++){
+		ret.push(langs[i].innerText);
+	}
+	return ret;
+}
+
+var typed = function(){
+	// pre-punchline
+	var data = typed_read(document.querySelector('#typed-pre-punchline'));
+	type('.pre-punchline span', data);
+	// punchline
+	data = typed_read(document.querySelector('#typed-punchline'));
+	type('.punchline', data);
+};
+
+var type = function(element, data){
+	new Typed(element, {
+		strings: data,
+		typeSpeed: 75,
+		callback: function(){type(element, data)}
+	});
+}
+
 /***************************************************************/
 /*********************  POPULATE PRICING  **********************/
 /***************************************************************/
 
-let initPopulatePricing = function () {
+var initPopulatePricing = function () {
 	if (langs.contains(langCode)) {
 		$.getJSON('lang/' + langCode + '.json', populatePricing);
 	} else {
@@ -113,21 +140,21 @@ let initPopulatePricing = function () {
 	}
 };
 
-let populatePricing = function (jsData) {
+var populatePricing = function (jsData) {
 
-	let pricingEventTypeOptions = $('#selectEventType').find("option").toArray();
+	var pricingEventTypeOptions = $('#selectEventType').find("option").toArray();
 
 	pricingEventTypeOptions.forEach(function (option, idx) {
 		option.textContent = jsData [$(option).attr("translate")];
 	});
 
-	let pricingComplexictyOptions = $('#selectComplexity').find("option").toArray();
+	var pricingComplexictyOptions = $('#selectComplexity').find("option").toArray();
 
 	pricingComplexictyOptions.forEach(function (option, idx) {
 		option.textContent = jsData [$(option).attr("translate")];
 	});
 
-	let pricingAudienceSizeOptions = $('#selectAudienceSize').find("option").toArray();
+	var pricingAudienceSizeOptions = $('#selectAudienceSize').find("option").toArray();
 
 	pricingAudienceSizeOptions.forEach(function (option, idx) {
 		option.textContent = jsData [$(option).attr("translate")];
@@ -140,7 +167,7 @@ let populatePricing = function (jsData) {
 /************************  SCROLL FIRE  ************************/
 /***************************************************************/
 
-let options = [
+var options = [
 	{selector: '.wrapper-stats', offset: 200, callback: function() {
 		$('.count').each(function () {
 			$(this).prop('Counter',0).animate({
