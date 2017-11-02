@@ -102,11 +102,11 @@ var initTranslate = function () {
 	}
 };
 
-var typed_read = function(element){
+var typed_read = function(element, header){
 	var langs = element.querySelectorAll('lang');
 	var ret = [];
 	for(var i = 0; i < langs.length; i++){
-		ret.push(langs[i].innerText);
+		ret.push(langs[i].innerText + (header ? ' ^5000' : ''));
 	}
 	return ret;
 }
@@ -116,16 +116,17 @@ var typed = function(){
 	var data = typed_read(document.querySelector('#typed-pre-punchline'));
 	type('.pre-punchline span', data);
 	// punchline
-	data = typed_read(document.querySelector('#typed-punchline'));
+	data = typed_read(document.querySelector('#typed-punchline'), true);
 	type('.punchline', data);
 };
 
-var type = function(element, data){
-	new Typed(element, {
+var type = function(element, data, speed){
+	var typed = new Typed(element, {
 		strings: data,
-		typeSpeed: 75,
-		callback: function(){type(element, data)}
+		typeSpeed: speed || 75,
+		loop:true
 	});
+	console.log('typed', typed);
 }
 
 /***************************************************************/
