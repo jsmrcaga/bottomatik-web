@@ -227,6 +227,10 @@ nav {
     opacity: 0.5;
 }
 
+.wrapper-features lang {
+    font-size: 20px;
+}
+
 .wrapper-features .subtitle {
     font-weight: normal;
     font-size: 1em;
