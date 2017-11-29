@@ -284,92 +284,141 @@ nav {
     border-radius: 16px;
 }
 
-.marvel-device.iphone6 {
-    width: 232px;
-    height: 413px;
-    padding: 65px 15px;
-    background: #d9dbdc;
-    -webkit-border-radius: 35px;
-    border-radius: 35px;
-    -webkit-box-shadow: inset 0 0 2px 0 rgba(0,0,0,0.2);
-    box-shadow: inset 0 0 2px 0 rgba(0,0,0,0.2);
+.marvel-device.iphone-x {
+    width: 238px;
+    height: 515px;
+    padding: 16.5px;
+    border-radius: 42px;
+    -webkit-box-shadow: inset 0 0 7px 0 black;
+    box-shadow: inset 0 0 7px 0 black;
 }
 
-.marvel-device.iphone6:before {
-    width: calc(100% - 7px);
-    height: calc(100% - 7px);
-    top: 4px;
-    left: 4px;
-    -webkit-border-radius: 31px;
-    border-radius: 31px;
+.marvel-device.iphone-x:before {
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    top: 3px;
+    left: 3px;
+    border-radius: 39px;
 }
 
-.marvel-device.iphone6 .top-bar {
-    height: 9px;
-    top: 42px;
+.marvel-device.iphone-x .notch {
+    position: absolute;
+    width: 133px;
+    height: 19px;
+    top: 16.5px;
+    left: 68px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
-.marvel-device.iphone6 .bottom-bar {
-    height: 9px;
-    bottom: 42px;
+.marvel-device.iphone-x .notch:before {
+    right: -5px;
 }
 
-.marvel-device.iphone6 .sleep {
-    top: 118px;
-    right: -2.5px;
-    width: 2.5px;
-    height: 41px;
-    -webkit-border-radius: 0 1.2px 1.2px 0;
-    border-radius: 0 1.2px 1.2px 0;
-}
-
-.marvel-device.iphone6 .volume {
-    left: -2.5px;
-    top: 116px;
-    height: 41px;
-    width: 2.5px;
-    -webkit-border-radius: 1.2px 0 0 1.2px;
-    border-radius: 1.2px 0 0 1.2px;
-}
-
-.marvel-device.iphone6 .volume:before {
-    left: 1.2px;
-    top: -48px;
-    height: 25px;
-    width: 1.2px;
-    -webkit-border-radius: 1.2px 0 0 1.2px;
-    border-radius: 1.2px 0 0 1.2px;
-}
-
-.marvel-device.iphone6 .volume:after {
-    top: 51px;
-    height: 41px;
-    width: 2.5px;
-    -webkit-border-radius: 1.2px 0 0 1.2px;
-    border-radius: 1.2px 0 0 1.2px;
-}
-
-.marvel-device.iphone6 .camera {
-    width: 7px;
-    height: 7px;
-    top: 15px;
-    margin-left: -4px;
-}
-
-.marvel-device.iphone6 .sensor {
-    width: 10px;
-    height: 10px;
-    top: 30px;
-    left: 83px;
-}
-
-.marvel-device.iphone6 .speaker {
-    width: 43px;
+.marvel-device.iphone-x .camera {
+    width: 4px;
     height: 4px;
-    top: 33px;
-    margin-left: -22px;
-    -webkit-border-radius: 4px;
+    top: 6px;
+    left: 98px;
+}
+
+.marvel-device.iphone-x .speaker {
+    height: 4px;
+    width: 38px;
+    top: 6px;
+    margin-left: -19px;
     border-radius: 4px;
+}
+
+.marvel-device.iphone-x .notch:after {
+    left: -5px;
+}
+
+.marvel-device.iphone-x .top-bar {
+    top: 50px;
+}
+
+.marvel-device.iphone-x .bottom-bar {
+    bottom: 50px;
+}
+
+.marvel-device.iphone-x .top-bar, .marvel-device.iphone-x .bottom-bar {
+    height: 5px;
+}
+
+.marvel-device.iphone-x .sleep {
+    height: 55px;
+    top: 127px;
+    right: -2px;
+}
+
+.marvel-device.iphone-x .volume, .marvel-device.iphone-x .volume:before, .marvel-device.iphone-x .volume:after, .marvel-device.iphone-x .sleep {
+    width: 2px;
+}
+
+.marvel-device.iphone-x .volume {
+    left: -2px;
+    top: 74px;
+    height: 20px;
+}
+
+.marvel-device.iphone-x .volume:before {
+    height: 39px;
+    top: 39px;
+}
+
+.marvel-device.iphone-x .volume:after {
+    height: 39px;
+    top: 89px;
+}
+
+.marvel-device.iphone-x .overflow {
+    border-radius: 42px;
+}
+
+.marvel-device.iphone-x .shadow {
+    width: 57px;
+    height: 57px;
+}
+
+.marvel-device.iphone-x .shadow--tr {
+    top: -13px;
+    right: -13px;
+}
+
+.marvel-device.iphone-x .shadow--tl {
+    top: -13px;
+    left: -13px;
+}
+
+.marvel-device.iphone-x .shadow--br {
+    bottom: -13px;
+    right: -13px;
+}
+
+.marvel-device.iphone-x .shadow--bl {
+    bottom: -13px;
+    left: -13px;
+}
+
+.marvel-device.iphone-x .inner-shadow {
+    width: calc(100% - 13px);
+    height: calc(100% - 13px);
+    top: 6px;
+    left: 6px;
+    border-radius: 36px;
+    -webkit-box-shadow: inset 0 0 10px 0 rgba(255,255,255,0.66);
+    box-shadow: inset 0 0 10px 0 rgba(255,255,255,0.66);
+}
+
+.marvel-device.iphone-x .inner-shadow:before {
+    -webkit-box-shadow: inset 0 0 13px 0 #FFFFFF;
+    box-shadow: inset 0 0 13px 0 #FFFFFF;
+    border-radius: 127px / 71px;
+}
+
+.marvel-device.iphone-x .screen {
+    border-radius: 25px;
 }
 
 .marvel-device .screen {
