@@ -13,7 +13,6 @@ init = function () {
 		$('.modal').modal();
 		initPopulatePricing();
 		initTranslate();
-		$('#first_name, #last_name, #society, #email').on('keydown', checkForm);
 	});
 
 	pricingResultWrapper = document.getElementById('pricingResultWrapper').innerHTML;
