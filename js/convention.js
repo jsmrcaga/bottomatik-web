@@ -5,6 +5,7 @@ function init(){
 		$('.scrollspy').scrollSpy();
         $(".button-collapse").sideNav();
 		$('ul.tabs').tabs();
+		$('video').defaultPlaybackRate = 0.2;
 		initTranslate();
 	});
 };

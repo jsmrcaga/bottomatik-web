@@ -21,9 +21,15 @@
     background: #ab008e;
 }
 
-.wrapper-header .contact-us .btn:hover {
+.wrapper-header .contact-us .btn:hover, .card .contact-us .btn:hover {
     background: #ab008e;
     border-color: #ab008e;
+    color: white;
+}
+
+.card .contact-us .btn {
+    color: black;
+    margin-top: 24px;
 }
 
 .wrapper-header .convention-tab-menu {
@@ -86,6 +92,10 @@
     height: 500px;
     text-align: center;
     font-size: 30px;
+}
+
+.wrapper-convention .subtitle img {
+    max-height: 60px;
 }
 
 .wrapper-convention img {
@@ -191,6 +201,10 @@
 
 .detail-section > div {
     transform: skewY(6deg);
+}
+
+.card-no-padding .card-content{
+    padding: 24px 0 24px 0;
 }
 
 footer:before {
@@ -420,4 +434,8 @@ footer.page-footer .footer-copyright:before {
     top: auto;
     bottom: 0px;
     transform: translateX(-50%);
+}
+
+.no-shadow {
+    box-shadow: none!important;
 }

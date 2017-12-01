@@ -8,6 +8,8 @@
 	"menu-solutions-museum-subtitle": "Museum",
 	"menu-solutions-sport-title": "Sports",
 	"menu-solutions-sport-subtitle": "Change your relationship with your participants and their supporters",
+	"menu-solutions-university-title": "University",
+	"menu-solutions-university-subtitle": "Give your university a virtual assistant to better understand your future students",
 	"contact-us": "Contact Us",
 	"punchline-2": "Let our bots answer all the questions.",
 	"use-cases-title": "Chatbots to assist your events",
@@ -18,6 +20,7 @@
 	"use-cases-ponctual-desc-1": "Deploy a chatbot for your festivals, shows, parties ...",
 	"use-cases-ponctual-desc-2": "Allow your visitors to have quick and relevant access to the information they need. Integrate your favorite services, ticketing and more into your chatbot.",
 	"use-cases-pricing": "Pricing",
+	"get-pricing": "Get pricing",
 	"stats-title": "Bottomatik in numbers",
 	"stats-users": "Users",
 	"stats-messages": "Messages",
@@ -46,6 +49,9 @@
 	"pricing-4": "people.",
 	"pricing-event-type-desc": "Event type",
 	"pricing-event-type-private": "a private event",
+	"pricing-event-type-convention": "a convention",
+	"pricing-event-type-sport": "a sport event",
+	"pricing-event-type-university": "an university",
 	"pricing-event-type-museum": "a museum",
 	"pricing-event-type-festival": "a music festival",
 	"pricing-event-type-park": "an amusement park",
@@ -62,7 +68,7 @@
 	"pricing-from": "From: ",
 	"pricing-vat": " + VAT",
 	"pricing-month": "/month",
-	"pricing-month-2": " + development costs",
+	"pricing-month-2": " + intialization costs",
 	"pricing-custom": "Custom bot, contact us for an accurate quote",
 	"blog-title": "Blog",
 	"blog-article-1": "Pourquoi passer par une agence pour développer votre Chatbot ?",
@@ -143,5 +149,6 @@
 	"solution-sport-desc-1": "Your chatbot contains all the main information for participants and supporters. Integrate the program of your event: its different races, animations ... and allow participants to save their diary in your chatbot.<br/>In addition, allow your participants and supporters to have access to your FAQ directly from the chatbot and practical information to come to the place or contact your team.",
 	"solution-sport-subtitle-2": "Ticketing, live tracking",
 	"solution-sport-desc-2": "Your chatbot represents you, so put your entire event in it!<br/>In addition to the data, Bottomatik allows you to integrate your services into the chatbot to make it a complete virtual assistant. No more applications, your chatbot can do it all.<br/>Bottomatik can integrate your ticketing, your live tracking app and others inside the chatbot.",
-	"solution-sport-desc-3": "Be ahead of your time, put your event forward with an innovative service.<br/>Chatbots allows you to communicate directly with your participants and offer them a better experience. A change of program? Warn all participants and supporters who have marked this program on their agenda.<br/>During and after your event: access to the chatbot analytics and what visitors have requested most. Be aware of the strengths and weaknesses of your sport event and ask for quick feedback from participants."
+	"solution-sport-desc-3": "Be ahead of your time, put your event forward with an innovative service.<br/>Chatbots allows you to communicate directly with your participants and offer them a better experience. A change of program? Warn all participants and supporters who have marked this program on their agenda.<br/>During and after your event: access to the chatbot analytics and what visitors have requested most. Be aware of the strengths and weaknesses of your sport event and ask for quick feedback from participants.",
+	"solution-university-punchline-1-2": "University"
 }

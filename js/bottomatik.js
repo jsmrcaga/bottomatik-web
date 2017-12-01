@@ -10,8 +10,10 @@ init = function () {
 		$('.tooltipped').tooltip({delay: 50});
 		$('ul.tabs').tabs({'swipeable': true, 'responsiveThreshold': true});
 		$('.parallax').parallax();
+		$('.modal').modal();
 		initPopulatePricing();
 		initTranslate();
+		$('#first_name, #last_name, #society, #email').on('keydown', checkForm);
 	});
 
 	pricingResultWrapper = document.getElementById('pricingResultWrapper').innerHTML;
@@ -34,7 +36,7 @@ init();
 function pricingCalcul() {
 	let price = 0;
 	document.getElementById('pricingResultWrapper').innerHTML = pricingResultWrapper;
-	if (parseInt(document.getElementById('selectEventType').value) === 2000) {
+	if (parseInt(document.getElementById('selectEventType').value) === 2000 || parseInt(document.getElementById('selectEventType').value) === 700) {
 		if (parseInt(document.getElementById('selectComplexity').value) === 1000) {
 			price = parseInt(document.getElementById('selectEventType').value) / 2;
 			document.getElementById('pricingResult').textContent = `${price}€`;
@@ -162,4 +164,21 @@ function commaSeparateNumber(val){
 		val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
 	}
 	return val;
+}
+
+/***************************************************************/
+/************************* PRICING FORM ************************/
+/***************************************************************/
+
+function showPricing() {
+	$('#pricingResultWrapper').css('display', 'block');
+}
+
+function showMailChimp() {
+	console.log('POULET');
+	require(["mojo/signup-forms/Loader"], function (L) {
+		L.start({"baseUrl": "mc.us15.list-manage.com", "uuid": "5b9731e2aae2f10b5b74dbdb5", "lid": "56f2da93e1"})
+	});
+	setTimeout(showPricing, 1000);
+	document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
 }
