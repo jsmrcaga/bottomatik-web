@@ -122,7 +122,7 @@ nav {
     position: absolute;
 }
 
-.wrapper-header span:nth-child(1) {
+.wrapper-header > span:nth-child(1) {
     width: 100%;
     height: 60%;
     transform: skewX(35deg);
@@ -132,7 +132,7 @@ nav {
     background-image: -moz-linear-gradient(left, #5a004c, #890073);
 }
 
-.wrapper-header span:nth-child(2) {
+.wrapper-header > span:nth-child(2) {
     width: 100%;
     height: 100%;
     transform: skewX(35deg);
@@ -1065,9 +1065,24 @@ footer.page-footer .footer-copyright:before {
     box-shadow: 3px 3px 10px #888888;
 }
 
+.fb-span {
+    top: 70%;
+    transform: skewY(12deg);
+    width: 100%;
+}
+
+.botto-fb-button {
+    width: 150px;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 1200px) {
     .hide-on-large-and-down {
         display: none;
+    }
+
+    .wrapper-header {
+        height: 1200px !important;
     }
 
     .why-bot {
@@ -1125,6 +1140,10 @@ footer.page-footer .footer-copyright:before {
         overflow: hidden;
     }
 
+    .wrapper-header {
+        height: 600px !important;
+    }
+
     .wrapper-header .punchline {
         top: 25%;
         font-size: 15px;
@@ -1143,6 +1162,10 @@ footer.page-footer .footer-copyright:before {
     .wrapper-header .punchline-2 {
         top: 72%;
         font-size: 15px;
+    }
+
+    .fb-span {
+        top: 80%;
     }
 
     .wrapper-features .features-logo-wrapper .features-logo {

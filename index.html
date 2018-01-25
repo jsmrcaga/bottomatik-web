@@ -76,7 +76,7 @@
 		ga('create', 'UA-104465151-1', 'auto');
 		ga('send', 'pageview');
 	</script>
-
+	<script type="text/javascript" src="/js/botto.js"></script>
 </head>
 
 <body id="page-top">
@@ -234,6 +234,7 @@
 				</a>
 			</span>
 		<span class="punchline-2"><lang tkey="punchline-2">Laissez nos chatbots répondre à toutes les questions.</lang></span>
+		<span class="fb-span"><div class="botto-fb-button"></div></span>
 	</div>
 </header>
 <div class="section scrollspy no-pad-bot wrapper-examples" id="examples">
@@ -902,7 +903,14 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/workshop/1.1.0/workshop.min.js"></script>
 <script type="text/javascript" src="js/bottomatik.js"></script>
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-
+<script type="text/javascript">
+	botto.facebook.init('botto').then(e => {
+		botto.facebook.button('botto_web', {color:'blue', size:'xlarge'});
+		botto.facebook.ready();
+	}).catch(e => {
+		console.error('Could not initialize botto facebook plugin', e);
+	})
+</script>
 </body>
 
 </html>
