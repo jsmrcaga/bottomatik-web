@@ -1081,6 +1081,10 @@ footer.page-footer .footer-copyright:before {
         display: none;
     }
 
+    .wrapper-header {
+        height: 1200px !important;
+    }
+
     .why-bot {
         overflow: hidden;
     }
@@ -1136,6 +1140,10 @@ footer.page-footer .footer-copyright:before {
         overflow: hidden;
     }
 
+    .wrapper-header {
+        height: 600px !important;
+    }
+
     .wrapper-header .punchline {
         top: 25%;
         font-size: 15px;
@@ -1154,6 +1162,10 @@ footer.page-footer .footer-copyright:before {
     .wrapper-header .punchline-2 {
         top: 72%;
         font-size: 15px;
+    }
+
+    .fb-span {
+        top: 80%;
     }
 
     .wrapper-features .features-logo-wrapper .features-logo {
